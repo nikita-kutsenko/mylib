@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MYLIB - my personal website with my codes, examples and drafts.</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
+</head>
+<body>
+	<div class="wrapper">
+		<!-- --------------------------------------------------------------------- header ----- -->
+		<header class="header">
+			<nav class="nav">
+				<a href="#" class="logo">&lt;!-- mylib --&gt;</a>
+				<ul class="nav-list">
+					<li class="nav-list-item">
+						<a href="index.html">elements</a>
+					</li> 
+					<li class="nav-list-item nav-active">
+						<a href="components.html">components</a>
+					</li>
+					<li class="nav-list-item">
+						<a href="layouts.html">layouts</a>
+					</li>
+					<li class="nav-list-item">
+						<a href="drafts.html">drafts</a>
+					</li>
+					<li class="nav-list-item">
+						<a href="documentation.html">documentation</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- --------------------------------------------------------------------- main ------- -->
+		<main class="main">
+			<!-- sidebar -->
+			<nav class="sidebar">
+				<ul class="sidebar-list">
+					<!-- example of list item -->
+					<li class="sidebar-list-item active example">
+						<a href="components.html">example</a>
+					</li> 
+					<!-- end -->
+
+					<li class="sidebar-list-item active">
+						<a href="components.html">chevron menu</a>
+					</li>
+					<li class="sidebar-list-item  ">
+						<a href="components-dropdown-menu.html">dropdown menu</a>
+					</li>
+					<li class="sidebar-list-item  ">
+						<a href="components-modal-box.html">modal box</a>
+					</li>
+					<li class="sidebar-list-item  ">
+						<a href="components-allerts.html">allerts</a>
+					</li>
+				</ul>
+			</nav>
+ 
+			<!-- main content -->
+			<div class="content">
+				<!-- main title -->
+				<div class="main-title">
+					<h2>chevron menu</h2>
+				</div>
+				<div class="main-title-section">
+					<div class="main-container-info">
+						<div class="info-i">
+							<label>i</label>
+						</div>
+						<ul class="info-text">
+							<li>Possible to use on gradient background</li>
+							<li>Easy to use opacity for items background</li>
+							<li>Cross-browser</li>
+						</ul>
+					</div>
+				</div>
+
+
+
+				<!-- chevron menu -->
+				<div class="point-chevron menu ">
+					<!-- main elements -->
+					<div class="main-mblock">
+
+						<!-- MARK-UP block  -->
+						<div class="mblock example">
+							<!-- title -->
+								<div class="mblock-title">
+									<h3>Title</h3>
+								</div>
+
+							<!-- result -->
+								<div class="mblock-result">
+									<!-- CHANGE result html + css -->
+								</div>
+
+							<!-- code HTML -->
+								<div class="mblock-code html-margin">
+									<div class="code-type">
+										<label>html</label>
+									</div>
+									<!-- code -->
+									<div class="code-black-box">
+<pre><code><!-- CHANGE code for html --></code></pre>
+									</div>
+								</div>
+
+
+							<!-- code CSS -->
+								<div class="mblock-code">
+									<div class="code-type">
+										<label>css</label>
+									</div>
+									<!-- code -->
+									<div class="code-black-box">
+<pre><code><!-- CHANGE code for css --></code></pre>
+									</div>
+								</div>
+						</div> <!-- mblock -->
+						<!-- MARK-UP block END -->
+
+
+						<!-- one color background block  -->
+						<div class="mblock">
+							<!-- title -->
+								<div class="mblock-title">
+									<h3>one color background</h3>
+								</div>
+
+							<!-- result -->
+								<div class="mblock-result">
+									<div class="components-chevron-nav-menu-body-black">
+										<ul class="components-chevron-nav-list">
+											<li><a href="#">ABOUT</a></li>
+											<li><a href="#">CAREERS</a></li>
+											<li><a href="#">FAQ</a></li>
+											<li><a href="#">CONTACT</a></li>
+										</ul>
+									</div>
+								</div>
+
+							<!-- code HTML -->
+								<div class="mblock-code html-margin">
+									<div class="code-type">
+										<label>html</label>
+									</div>
+									<!-- code -->
+									<div class="code-black-box">
+<xmp><div class="menu-body-black">
+	<ul class="list">
+		<li><a href="#">ABOUT</a></li>
+		<li><a href="#">CAREERS</a></li>
+		<li><a href="#">FAQ</a></li>
+		<li><a href="#">CONTACT</a></li>
+	</ul>
+</div></xmp>
+									</div>
+								</div>
+
+
+							<!-- code CSS -->
+								<div class="mblock-code">
+									<div class="code-type">
+										<label>css</label>
+									</div>
+									<!-- code -->
+									<div class="code-black-box">
+<pre><code>div.menu-body-black {
+	height: 96px;
+	padding: 2px 0;
+
+	background-color: #000000;
+}
+
+ul.list {
+	margin:0;
+	padding: 0 60px;
+
+	text-align: right;
+}
+
+ul.list li {
+	display: inline-block;
+	position: relative;
+	padding: 30px 25px 29px 50px;
+	margin: 0 25px 0 0;
+
+	background-color: #ffffff;
+
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 37px;
+}
+
+ul.list li:hover {
+	background-color: #cccccc;
+}
+
+ul.list li:hover:after {
+	border-color: transparent
+	transparent transparent #cccccc;
+}
+
+ul.list li::after {
+	position: absolute;
+	left: 100%;
+	top: 0;
+
+	content: "";
+	width: 0;
+	height: 0;
+
+	border-style: solid;
+	border-width: 48px 0 48px 25px;
+	border-color: transparent
+	 transparent transparent #ffffff;
+}
+
+ul.list li > a {
+	vertical-align: top;
+
+	text-decoration: none;
+	color: #000000;
+}
+
+ul.list li > a::before {
+	position: absolute;
+	left: 0;
+	top: 0;
+
+	content: "";
+	width: 0;
+	height: 0;
+
+	border-style: solid;
+	border-width: 48px 0 48px 25px;
+	border-color: transparent
+	transparent transparent #000000;
+	vertical-align: middle;
+}</code></pre>
+									</div>
+								</div>
+						</div> <!-- mblock -->
+						<!-- one color background block END -->
+
+						<!-- gradient background block  -->
+						<div class="mblock">
+							<!-- title -->
+								<div class="mblock-title">
+									<h3>gradient background</h3>
+								</div>
+
+							<!-- result -->
+								<div class="mblock-result">
+									<div class="components-chevron-nav-menu-body-gradient">
+										<ul class="components-chevron-nav-list-gr">
+											<li><a href="#">ABOUT</a></li>
+											<li><a href="#">CAREERS</a></li>
+											<li><a href="#">FAQ</a></li>
+											<li><a href="#">CONTACT</a></li>
+										</ul>
+									</div>
+								</div>
+
+							<!-- code HTML -->
+								<div class="mblock-code html-margin">
+									<div class="code-type">
+										<label>html</label>
+									</div>
+									<!-- code -->
+									<div class="code-black-box">
+<xmp><div class="menu-body-gradient">
+	<ul class="list-gr">
+		<li><a href="#">ABOUT</a></li>
+		<li><a href="#">CAREERS</a></li>
+		<li><a href="#">FAQ</a></li>
+		<li><a href="#">CONTACT</a></li>
+	</ul>
+</div></xmp>
+									</div>
+								</div>
+
+
+							<!-- code CSS -->
+								<div class="mblock-code">
+									<div class="code-type">
+										<label>css</label>
+									</div>
+									<!-- code -->
+									<div class="code-black-box">
+<pre><code>div.menu-body-gradient  {
+	height: 96px;
+	padding: 2px 0;
+
+	background: linear-gradient (90deg, #000000 0%, rgba(0, 0, 0, 0) 127.92%);
+}
+
+ul.list-gr {
+	margin:0;
+	padding: 0 60px;
+
+	text-align: right;
+}
+
+ul.list-gr li {
+	display: inline-block;
+	position: relative;
+	padding: 30px 25px 29px 25px;
+	margin: 0 20px 0 25px;
+
+	background-color: #ffffff;
+
+	font-family: Helvetica;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 32px;
+	line-height: 37px;
+}
+
+ul.list-gr li:hover {
+	opacity: 0.7;
+}
+
+ul.list-gr li::after {
+	position: absolute;
+	top:0;
+	left: 100%;
+
+	content: "";
+	width: 0;
+	height: 0;
+
+	border-style: solid;
+	border-width: 48px 0 48px 25px;
+	border-color: transparent transparent transparent #ffffff;
+}
+
+ul.list-gr li > a {
+	vertical-align: top;
+
+	text-decoration: none;
+	color: #000000;
+}
+
+ul.list-gr li > a::after {
+	position: absolute;
+	left: -25px;
+	top: 0px;
+
+	content: "";
+	width: 0;
+	height: 0;
+
+	border-style: solid;
+	border-width: 0 25px 48px 0;
+	border-color: transparent #ffffff transparent transparent;
+}
+
+ul.list-gr li > a::before {
+	position: absolute;
+	left: -25px;
+	top: 48px;
+
+	content: "";
+	width: 0;
+	height: 0;
+
+	border-style: solid;
+	border-width: 0 0 48px 25px;
+	border-color: transparent transparent #ffffff transparent;
+}</code></pre>
+									</div>
+								</div>
+						</div> <!-- mblock -->
+						<!-- MARK-UP block END -->
+
+					</div> <!-- main-mblock -->
+				</div> <!-- point-NAME end -->
+			<!-- end of content for main -->
+			</div> <!-- content -->
+		</main>
+	</div> <!-- wrapper -->
+</body>
+</html>

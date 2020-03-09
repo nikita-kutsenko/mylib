@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MYLIB - my personal website with my codes, examples and drafts.</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
+</head>
+<body>
+	<div class="wrapper">
+		<!-- --------------------------------------------------------------------- header ----- -->
+		<header class="header">
+			<nav class="nav">
+				<a href="#" class="logo">&lt;!-- mylib --&gt;</a>
+				<ul class="nav-list">
+					<li class="nav-list-item nav-active">
+						<a href="index.html">elements</a>
+					</li> 
+					<li class="nav-list-item">
+						<a href="components.html">components</a>
+					</li>
+					<li class="nav-list-item">
+						<a href="layouts.html">layouts</a>
+					</li>
+					<li class="nav-list-item">
+						<a href="drafts.html">drafts</a>
+					</li>
+					<li class="nav-list-item">
+						<a href="documentation.html">documentation</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- --------------------------------------------------------------------- main ------- -->
+		<main class="main">
+			<!-- sidebar -->
+			<nav class="sidebar">
+				<ul class="sidebar-list">
+					<!-- example of list item -->
+					<li class="sidebar-list-item active example">
+						<a href="index.html">example</a>
+					</li> 
+					<!-- end -->
+
+					<li class="sidebar-list-item ">
+						<a href="index.html">typography</a>
+					</li>
+					<li class="sidebar-list-item">
+						<a href="elements-lists.html">lists</a>
+					</li>
+					<li class="sidebar-list-item">
+						<a href="elements-form-elements.html">form elements</a>
+					</li>
+					<li class="sidebar-list-item active">
+						<a href="elements-buttons.html">buttons</a>
+					</li>
+					<li class="sidebar-list-item">
+						<a href="elements-tables.html">tables</a>
+					</li>
+					<li class="sidebar-list-item">
+						<a href="elements-tooltips.html">tooltips</a>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- main content -->
+			<div class="content">
+				<!-- main title -->
+				<div class="main-title">
+					<h2>buttons</h2>
+				</div>
+				<div class="main-title-section">
+					<div class="main-container-info">
+						<div class="info-i">
+							<label>i</label>
+						</div>
+						<ul class="info-text">
+							<li>font-size: 16px;</li>
+							<li>line-height: 1.3;</li>
+						</ul>
+					</div>
+				</div>
+
+
+
+				<!-- buttons -->
+				<div class="point-buttons ">
+					<!-- main elements -->
+					<div class="main-mblock">
+
+						<!-- MARK-UP block  -->
+						<div class="mblock example">
+							<!-- title -->
+								<div class="mblock-title">
+									<h3>Title</h3>
+								</div>
+
+							<!-- result -->
+								<div class="mblock-result">
+									<!-- CHANGE result html + css -->
+								</div>
+
+							<!-- code HTML -->
+								<div class="mblock-code html-margin">
+									<div class="code-type">
+										<label>html</label>
+									</div>
+									<!-- code -->
+									<div class="code-black-box">
+										<pre><code><!-- CHANGE code for html --></code></pre>
+									</div>
+								</div>
+
+
+							<!-- code CSS -->
+								<div class="mblock-code">
+									<div class="code-type">
+										<label>css</label>
+									</div>
+									<!-- code -->
+									<div class="code-black-box">
+										<pre><code><!-- CHANGE code for css --></code></pre>
+									</div>
+								</div>
+						</div> <!-- mblock -->
+						<!-- MARK-UP block END -->
+
+						<!-- buttons for form block  -->
+						<div class="mblock ">
+							<!-- title -->
+								<div class="mblock-title">
+									<h3>buttons for form</h3>
+								</div>
+
+							<!-- result -->
+								<div class="mblock-result">
+									<div class="elements-buttons-buttons-for-form">
+										<input class="btsend-one" type="submit" name="contact-us-form" value="send">
+
+										<input class="btsend-two" type="submit" name="contact-us-form" value="send">
+
+										<a href="#" class="btnotification">
+											<span>Inbox</span>
+											<span class="amount">3</span>
+										</a>
+									</div>
+								</div>
+
+							<!-- code HTML -->
+								<div class="mblock-code html-margin">
+									<div class="code-type">
+										<label>html</label>
+									</div>
+									<!-- code -->
+									<div class="code-black-box">
+<xmp><!-- black button "send" with hover -->
+<input class="btsend-one" type="submit" name="contact-us-form" value="send">
+
+<!-- blue button send two -->
+<input class="btsend-two" type="submit" name="contact-us-form" value="send">
+
+<!-- notification button -->
+<a href="#" class="btnotification">
+	<span>Inbox</span>
+	<span class="amount">3</span>
+</a></xmp>
+									</div>
+								</div>
+
+
+							<!-- code CSS -->
+								<div class="mblock-code">
+									<div class="code-type">
+										<label>css</label>
+									</div>
+									<!-- code -->
+									<div class="code-black-box">
+<pre><code>/*black buttons send one*/
+	.elements-buttons-buttons-for-form > input.btsend-one {
+		background: #000;
+		padding: 13px 63px;
+		font-weight: normal;
+		font-size: 28px;
+		line-height: 34px;
+		text-align: center;
+		text-transform: uppercase;
+		border: none;
+		border-radius: 8px;
+
+		outline: none;
+		cursor: pointer;
+
+		color: #FFFFFF;
+	}
+
+	.elements-buttons-buttons-for-form > input.btsend-one:hover {
+		background: #767676;
+	}
+
+
+
+/*blue button send two*/
+	.elements-buttons-buttons-for-form > input.btsend-two {
+		background: #fff;
+		padding: 11px 61px;
+		font-weight: normal;
+		font-size: 28px;
+		line-height: 34px;
+		text-align: center;
+		text-transform: uppercase;
+		border: 2px solid #2196F3;
+		border-radius: 8px;
+
+		outline: none;
+		cursor: pointer;
+
+		color: #2196F3;
+	}
+
+	.elements-buttons-buttons-for-form > input.btsend-two:hover {
+		background: #2196F3;
+		color: #fff;
+}
+
+
+
+/*notification button*/
+	.elements-buttons-buttons-for-form > a.btnotification {
+		background-color: #555;
+		color: white;
+		font-weight: normal;
+		font-size: 28px;
+		line-height: 34px;
+		text-align: center;
+		text-transform: uppercase;
+		text-decoration: none;
+
+		padding: 13px 26px;
+		position: relative;
+		display: inline-block;
+
+		border-radius: 2px;
+	}
+
+	.elements-buttons-buttons-for-form > a.btnotification:hover {
+	  background: #2196F3;
+	}
+
+	.elements-buttons-buttons-for-form > a.btnotification > .amount {
+		position: absolute;
+		top: -10px;
+		right: -10px;
+		padding: 5px 10px;
+		border-radius: 50%;
+		background: red;
+		color: white;
+		font-size: 20px;
+		line-height: 21px;
+	}</code></pre>
+									</div>
+								</div>
+						</div> <!-- mblock -->
+						<!-- MARK-UP block END -->
+
+					</div> <!-- main-mblock -->
+				</div> <!-- point-buttons end -->
+			<!-- end of content for main -->
+			</div> <!-- content -->
+		</main>
+	</div> <!-- wrapper -->
+</body>
+</html>

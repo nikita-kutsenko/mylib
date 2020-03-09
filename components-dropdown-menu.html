@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MYLIB - my personal website with my codes, examples and drafts.</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" href="//cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css">
+</head>
+<body>
+	<div class="wrapper">
+		<!-- --------------------------------------------------------------------- header ----- -->
+		<header class="header">
+			<nav class="nav">
+				<a href="#" class="logo">&lt;!-- mylib --&gt;</a>
+				<ul class="nav-list">
+					<li class="nav-list-item">
+						<a href="index.html">elements</a>
+					</li> 
+					<li class="nav-list-item nav-active">
+						<a href="components.html">components</a>
+					</li>
+					<li class="nav-list-item">
+						<a href="layouts.html">layouts</a>
+					</li>
+					<li class="nav-list-item">
+						<a href="drafts.html">drafts</a>
+					</li>
+					<li class="nav-list-item">
+						<a href="documentation.html">documentation</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<!-- --------------------------------------------------------------------- main ------- -->
+		<main class="main">
+			<!-- sidebar -->
+			<nav class="sidebar">
+				<ul class="sidebar-list">
+					<!-- example of list item -->
+					<li class="sidebar-list-item active example">
+						<a href="components.html">example</a>
+					</li> 
+					<!-- end -->
+
+					<li class="sidebar-list-item ">
+						<a href="components.html">chevron menu</a>
+					</li>
+					<li class="sidebar-list-item active ">
+						<a href="components-dropdown-menu.html">dropdown menu</a>
+					</li>
+					<li class="sidebar-list-item  ">
+						<a href="components-modal-box.html">modal box</a>
+					</li>
+					<li class="sidebar-list-item  ">
+						<a href="components-allerts.html">allerts</a>
+					</li>
+				</ul>
+			</nav>
+
+			<!-- main content -->
+			<div class="content">
+				<!-- main title -->
+				<div class="main-title">
+					<h2>dropdown menu</h2>
+				</div>
+				<div class="main-title-section">
+					<div class="main-container-info">
+						<div class="info-i">
+							<label>i</label>
+						</div>
+						<ul class="info-text">
+							<li>Some text</li>
+							<li>Some text</li>
+							<li>Cross-browser</li>
+						</ul>
+					</div>
+				</div>
+
+
+
+				<!-- dropdown-menu -->
+				<div class="point-dropdown-menu ">
+					<!-- main elements -->
+					<div class="main-mblock">
+
+						<!-- MARK-UP block  -->
+						<div class="mblock example">
+							<!-- title -->
+								<div class="mblock-title">
+									<h3>Title</h3>
+								</div>
+
+							<!-- result -->
+								<div class="mblock-result">
+									<!-- CHANGE result html + css -->
+								</div>
+
+							<!-- code HTML -->
+								<div class="mblock-code html-margin">
+									<div class="code-type">
+										<label>html</label>
+									</div>
+									<!-- code -->
+									<div class="code-black-box">
+										<pre><code><!-- CHANGE code for html --></code></pre>
+									</div>
+								</div>
+
+
+							<!-- code CSS -->
+								<div class="mblock-code">
+									<div class="code-type">
+										<label>css</label>
+									</div>
+									<!-- code -->
+									<div class="code-black-box">
+										<pre><code><!-- CHANGE code for css --></code></pre>
+									</div>
+								</div>
+						</div> <!-- mblock -->
+						<!-- MARK-UP block END -->
+
+						<!-- dropdown menu 1 block  -->
+						<div class="mblock ">
+							<!-- title -->
+								<div class="mblock-title">
+									<h3>dropdown menu small</h3>
+								</div>
+
+							<!-- result -->
+								<div class="mblock-result">
+									<div class="components-dropdown-menu-small">
+										<button class="components-dropdown-menu-small-dropbtn">Dropdown</button>
+										<div class="components-dropdown-menu-small-content">
+											<a href="#">Link 1</a>
+											<a href="#">Link 2</a>
+											<a href="#">Link 3</a>
+										</div>
+									</div>
+								</div>
+
+							<!-- code HTML -->
+								<div class="mblock-code html-margin">
+									<div class="code-type">
+										<label>html</label>
+									</div>
+									<!-- code -->
+									<div class="code-black-box">
+<xmp><div class="dropdown-menu-small">
+	<button class="dropdown-menu-small-dropbtn">Dropdown</button>
+	<div class="dropdown-menu-small-content">
+		<a href="#">Link 1</a>
+		<a href="#">Link 2</a>
+		<a href="#">Link 3</a>
+	</div>
+</div></xmp>
+									</div>
+								</div>
+
+
+							<!-- code CSS -->
+								<div class="mblock-code">
+									<div class="code-type">
+										<label>css</label>
+									</div>
+									<!-- code -->
+									<div class="code-black-box">
+<pre><code>/* Style The Dropdown Button */
+.dropdown-menu-small-dropbtn {
+	background-color: #4CAF50;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown-menu-small {
+	position: relative;
+	display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-menu-small-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-menu-small-content a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-menu-small-content a:hover {
+	background-color: #f1f1f1
+}
+
+/* Show the dropdown menu on hover */
+.dropdown-menu-small:hover .components-dropdown-menu-small-content {
+	display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown-menu-small:hover .components-dropdown-menu-small-dropbtn {
+	background-color: #3e8e41;
+}</code></pre>
+									</div>
+								</div>
+						</div> <!-- mblock -->
+						<!-- MARK-UP block END -->
+
+
+					</div> <!-- main-mblock -->
+				</div> <!-- point-NAME end -->
+			<!-- end of content for main -->
+			</div> <!-- content -->
+		</main>
+	</div> <!-- wrapper -->
+</body>
+</html>
